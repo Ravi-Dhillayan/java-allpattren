@@ -124,6 +124,20 @@ class Patterns{
 		System.out.println("Printed the Your pattern  :: ");
 		int t=0;
 		int te=0;
+		for(i=0;i<n;i++) {
+			int tem=1;
+			for(int a=1;a<=n-i;a++) {
+				System.out.print(tem);
+				tem++;
+			}
+			for(int b=0;b<i*2-1;b++) {
+				System.out.print("_");
+			}
+			for(int c=n-i;c>0;c--) {
+				System.out.print(c);
+			}
+			System.out.println();
+		}
 		for(i=1;i<=n;i++) {
 			for(j=1;j<=i;j++) {
 				System.out.print(j);
